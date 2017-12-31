@@ -15,7 +15,7 @@ namespace Babble.Commands {
 
             public override void Act(Cutscene cutscene, Action callback) {
                 Puppet puppet = cutscene.stage.GetPuppet(target);
-                puppet.target = position;
+                puppet.SetTarget(position, true);
 
                 if (position > puppet.position) {
                     puppet.facingLeft = false;
@@ -24,7 +24,7 @@ namespace Babble.Commands {
                 }
 
                 DelayCommandFactory.DelayCommand command = (DelayCommandFactory.DelayCommand) cutscene.commandFactories["delay"].GetCommand();
-                command.delay = (Mathf.Abs(puppet.target - puppet.position) * Puppet.MOVE_DURATION * 0.6f + Puppet.MOVE_DURATION * 0.4f) * 1000;
+                command.delay = (Mathf.Abs(puppet.GetTarget() - puppet.position) * Puppet.MOVE_DURATION * 0.6f + Puppet.MOVE_DURATION * 0.4f) * 1000;
                 command.Act(cutscene, delegate { callback(); });
             }
         }

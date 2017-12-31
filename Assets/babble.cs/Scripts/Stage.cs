@@ -103,7 +103,7 @@ namespace Babble {
 
             newPuppet.ChangeEmote(puppet.emote);
             newPuppet.position = puppet.position;
-            newPuppet.target = puppet.target;
+            newPuppet.SetTarget(puppet.GetTarget());
             newPuppet.facingLeft = puppet.facingLeft;
             newPuppet.gameObject.transform.localPosition = puppet.gameObject.transform.localPosition;
             newPuppet.gameObject.transform.localScale = puppet.gameObject.transform.localScale;

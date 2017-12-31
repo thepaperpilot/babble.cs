@@ -19,7 +19,7 @@ namespace Babble.Commands {
             public override void Act(Cutscene cutscene, Action callback) {
                 Puppet puppet = cutscene.stage.AddPuppet(cutscene.actors[name], id);
                 puppet.position = position;
-                puppet.target = position;
+                puppet.SetTarget(position);
                 puppet.UpdatePosition();
                 puppet.facingLeft = facingLeft;
                 puppet.emote = emote;

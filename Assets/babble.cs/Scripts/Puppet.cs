@@ -73,13 +73,6 @@ namespace Babble {
                 }
             }
         }
-        public int target {
-            get { return _target; }
-            set {
-                _target = value;
-                movingAnim = 0;
-            }
-        }
         public bool babbling {
             get { return _babbling; }
             set {
@@ -107,9 +100,9 @@ namespace Babble {
         // private fields with public getters/setters
         private bool _facingLeft;
         private int _emote;
-        private int _target;
         private bool _babbling;
-        
+
+        private int target;
         private float movingAnim = 0;
         private float eyesAnim = 0;
         private float mouthAnim = 0;
@@ -380,6 +373,15 @@ namespace Babble {
             // In JS I didn't have any issues just using 0.6. The only conclusion
             // I can draw is that Unity and/or c# has less precision in floating point numbers
             if (movingAnim == 0) movingAnim = 0.6001f;
+        }
+
+        public void SetTarget(int target, bool resetAnim = false) {
+            this.target = target;
+            if (resetAnim) movingAnim = 0;
+        }
+
+        public int GetTarget() {
+            return target;
         }
     }
 }
