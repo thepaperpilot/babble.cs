@@ -1,0 +1,94 @@
+{
+    "deadbonesStyle": false,
+    "body": [
+        {
+            "id": "d4a877ac-b026-4dca-8d69-bda8c9cfa090:22",
+            "x": 0,
+            "y": -150,
+            "rotation": 0,
+            "scaleX": -1,
+            "scaleY": 1
+        }
+    ],
+    "head": [],
+    "hat": [],
+    "mouths": [],
+    "eyes": [],
+    "emotes": [
+        {
+            "enabled": true,
+            "mouth": [],
+            "eyes": [],
+            "name": "default"
+        },
+        {
+            "enabled": false,
+            "mouth": [],
+            "eyes": [],
+            "name": "happy"
+        },
+        {
+            "enabled": false,
+            "mouth": [],
+            "eyes": [],
+            "name": "wink"
+        },
+        {
+            "enabled": false,
+            "mouth": [],
+            "eyes": [],
+            "name": "kiss"
+        },
+        {
+            "enabled": false,
+            "mouth": [],
+            "eyes": [],
+            "name": "angry"
+        },
+        {
+            "enabled": false,
+            "mouth": [],
+            "eyes": [],
+            "name": "sad"
+        },
+        {
+            "enabled": false,
+            "mouth": [],
+            "eyes": [],
+            "name": "ponder"
+        },
+        {
+            "enabled": false,
+            "mouth": [],
+            "eyes": [],
+            "name": "gasp"
+        },
+        {
+            "enabled": false,
+            "mouth": [],
+            "eyes": [],
+            "name": "veryangry"
+        },
+        {
+            "enabled": false,
+            "mouth": [],
+            "eyes": [],
+            "name": "verysad"
+        },
+        {
+            "enabled": false,
+            "mouth": [],
+            "eyes": [],
+            "name": "confused"
+        },
+        {
+            "enabled": false,
+            "mouth": [],
+            "eyes": [],
+            "name": "ooo"
+        }
+    ],
+    "props": [],
+    "name": "Animated",
+    "id": 2
+}

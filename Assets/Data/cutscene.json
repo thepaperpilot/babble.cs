@@ -1,0 +1,132 @@
+[
+  {
+    "command": "run",
+    "script": [
+      {
+        "command": "add",
+        "name": "gravy",
+        "id": 2,
+        "position": 6,
+        "facingLeft": true,
+        "emote": 0
+      },
+      {
+        "command": "delay",
+        "delay": 1500,
+        "wait": true
+      },
+      {
+        "command": "run",
+        "script": [
+          {
+            "command": "delay",
+            "delay": 1000,
+            "wait": true
+          },
+          {
+            "command": "set",
+            "target": 2,
+            "name": "animated"
+          }
+        ]
+      },
+      {
+        "command": "move",
+        "target": 2,
+        "position": 1,
+        "wait": true
+      },
+      {
+        "command": "remove",
+        "target": 2
+      }
+    ]
+  },
+  {
+    "command": "add",
+    "name": "gravy",
+    "id": 1,
+    "position": 0,
+    "facingLeft": false,
+    "emote": 0
+  },
+  {
+    "command": "delay",
+    "delay": 1000,
+    "wait": true
+  },
+  {
+    "command": "move",
+    "target": 1,
+    "position": 3,
+    "wait": true
+  },
+  {
+    "command": "facingLeft",
+    "target": 1,
+    "facingLeft": true
+  },
+  {
+    "command": "emote",
+    "target": 1,
+    "emote": 1
+  },
+  {
+    "command": "delay",
+    "delay": 1000,
+    "wait": true
+  },
+  {
+    "command": "babble",
+    "target": 1,
+    "action": "start"
+  },
+  {
+    "command": "delay",
+    "delay": 500,
+    "wait": true
+  },
+  {
+    "command": "move",
+    "target": 1,
+    "position": 5,
+    "wait": true
+  },
+  {
+    "command": "delay",
+    "delay": 250,
+    "wait": true
+  },
+  {
+    "command": "babble",
+    "target": 1,
+    "action": "stop"
+  },
+  {
+    "command": "delay",
+    "delay": 1500,
+    "wait": true
+  },
+  {
+    "command": "jiggle",
+    "target": 1
+  },
+  {
+    "command": "delay",
+    "delay": 250,
+    "wait": true
+  },
+  {
+    "command": "move",
+    "target": 1,
+    "position": 9,
+    "wait": true
+  },
+  {
+    "command": "chatter",
+	"target": 1,
+	"babbleQuotes": true,
+	"chat": "\"Use the arrow keys to control me now!\"",
+	"wait": true
+  }
+]
